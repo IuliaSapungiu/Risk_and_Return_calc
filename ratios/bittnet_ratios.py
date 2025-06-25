@@ -162,11 +162,14 @@ df_dupont = pd.DataFrame(dupont_results).round(3)
 output_path = "outputs/ratios.xlsx"
 
 if os.path.exists(output_path):
-    mode = 'a'  # append safely
+    mode = 'a'  # append safely'
+    writer = pd.ExcelWriter(output_path, mode=mode, if_sheet_exists='replace')
+    
 else:
     mode = 'w'  # create new file if not exists
+    writer = pd.ExcelWriter(output_path, mode=mode)
 
-with pd.ExcelWriter(output_path, mode=mode, if_sheet_exists='replace') as writer:
+with writer:
     df_stats.to_excel(writer, sheet_name="Risk Statistics", index=False)
     df_liquidity.to_excel(writer, sheet_name="Liquidity Ratios", index=False)
     df_leverage.to_excel(writer, sheet_name="Leverage Ratios", index=False)
