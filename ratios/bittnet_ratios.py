@@ -4,11 +4,11 @@ import numpy as np
 
 # Reloading the Excel file paths
 files = {
-    2020: r"D:\Fabiz\Licenta\ratios\reports\2020.xlsx",
-    2021: r"D:\Fabiz\Licenta\ratios\reports\2021.xlsx",
-    2022: r"D:\Fabiz\Licenta\ratios\reports\2022.xlsx",
-    2023: r"D:\Fabiz\Licenta\ratios\reports\2023.xlsx",
-    2024: r"D:\Fabiz\Licenta\ratios\reports\2024.xlsx",
+    2020: r"D:\Fabiz\Licenta\risk_and_return_calc\ratios\reports\2020.xlsx",
+    2021: r"D:\Fabiz\Licenta\risk_and_return_calc\ratios\reports\2021.xlsx",
+    2022: r"D:\Fabiz\Licenta\risk_and_return_calc\ratios\reports\2022.xlsx",
+    2023: r"D:\Fabiz\Licenta\risk_and_return_calc\ratios\reports\2023.xlsx",
+    2024: r"D:\Fabiz\Licenta\risk_and_return_calc\ratios\reports\2024.xlsx",
 }
 
 net_profits = []
@@ -181,4 +181,4 @@ print("Ratios: ")
 # print(df_leverage)
 # print(df_profitability)
 # print(df_efficiency)
-# print(df_dupont)
+print(df_dupont)
