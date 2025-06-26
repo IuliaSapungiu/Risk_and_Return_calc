@@ -3,12 +3,11 @@ import pandas as pd
 import numpy as np
 
 # Reloading the Excel file paths
+base_dir = os.path.dirname(os.path.abspath(__file__))
+reports_folder = os.path.join(base_dir, "reports")
 files = {
-    2020: r"D:\Fabiz\Licenta\risk_and_return_calc\ratios\reports\2020.xlsx",
-    2021: r"D:\Fabiz\Licenta\risk_and_return_calc\ratios\reports\2021.xlsx",
-    2022: r"D:\Fabiz\Licenta\risk_and_return_calc\ratios\reports\2022.xlsx",
-    2023: r"D:\Fabiz\Licenta\risk_and_return_calc\ratios\reports\2023.xlsx",
-    2024: r"D:\Fabiz\Licenta\risk_and_return_calc\ratios\reports\2024.xlsx",
+    year: os.path.join(reports_folder, f"{year}.xlsx")
+    for year in range(2020, 2025)
 }
 
 net_profits = []
