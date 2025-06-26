@@ -161,6 +161,8 @@ df_dupont = pd.DataFrame(dupont_results).round(3)
 # Combine into one Excel file with separate sheets
 output_path = "outputs/ratios.xlsx"
 
+os.makedirs("outputs", exist_ok=True)
+
 if os.path.exists(output_path):
     mode = 'a'  # append safely'
     writer = pd.ExcelWriter(output_path, mode=mode, if_sheet_exists='replace')
