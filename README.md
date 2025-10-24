@@ -94,11 +94,16 @@ OPTIONAL: Git installed on your machine (optional, for cloning the repository).
 ```
 Risk_and_Return_calc/
 │
-├── ratios/
-├── reports/
-├── outputs/  --- after you create it manually.
-├── bittnet_ratios.py
-├── requirements.txt
-└── .gitignore
+├── .gitignore
+├── README.md
+│
+└── ratios/
+    │
+    ├── BI visualizations/
+    ├── reports/
+    ├── outputs/              # creat manual, pentru fisierele generate
+    │
+    ├── bittnet_ratios.py
+    ├── requirements.txt
 ```
  
