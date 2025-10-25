@@ -1,4 +1,4 @@
-# Financial Ratio Analysis – Bittnet Systems S.A. (2020–2024)\
+# Risk and Return Analysis – Bittnet Systems S.A. (2020–2024)\
 ###### Undergraduate Bachelor Thesis Project – Financial Analysis of Bittnet Systems S.A. (2020–2024). 
 ###### All rights reserved © Iulia Sapungiu
 
